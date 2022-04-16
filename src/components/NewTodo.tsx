@@ -2,6 +2,7 @@ import { useRef } from "react";
 
 const NewTodo = () => {
   const todoTextInputRef = useRef<HTMLInputElement>(null);
+
   const submitHandler = (event: React.FormEvent) => {
     event.preventDefault();
     const enteredText = todoTextInputRef.current!.value;
